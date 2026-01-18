@@ -41,15 +41,16 @@ Berikut adalah status implementasi Full Stack dApp pada tahap Day 5:
 | 6  | Full flow berjalan end-to-end  | ⚠️ Sebagian | Alur frontend → wallet → blockchain berjalan dengan baik. Alur frontend → backend (server production) belum sepenuhnya berjalan karena backend tidak dideploy sebagai server aktif.                  |
 
 ### Arsitektur Akhir
+       User
+        ↓
 
-User
- ↓
-Frontend (Vercel)
- ↓
-Backend API (NestJS – Local / Swagger Documentation)
- ↓
-Blockchain (Avalanche Testnet)
-```
+    Frontend (Vercel)
+        ↓
+ 
+    Backend API (NestJS – Local / Swagger Documentation)
+        ↓
+ 
+    Blockchain (Avalanche Testnet)
 
 
 

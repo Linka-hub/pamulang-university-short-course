@@ -6,7 +6,7 @@ menyelesaikan Short Course Full Stack dApps Bersama Avalanche Indonesia selama 5
 Karena railway harus menggunakan kartu/berbayar saya mencoba menggunakan Github Pages jadi belom bisa menjalankan backend Nestjs secara server/menggunakan hosting railway karena GitHub Pages hanya static hosting.
 
 Sudah bisa di akses secara online tetapi,
-karna menggunakan Github Pages jadi saat menjalankan webnya dan kita meng-input pasti akan muncul error
+karna menggunakan Github Pages jadi saat menjalankan webnya dan kita meng-input pasti akan muncul error.
 
 ## Access disini
     
@@ -16,7 +16,7 @@ Backend API (Local) :  [http://localhost:3000/myswagger](http://localhost:3000/m
 
 ## Frontend Deployment
 Frontend dApp dideploy menggunakan Vercel dengan framework Next.js.
-Dan karena Backendnya gak saya deploy di railway jadi ENVnya tidak seperti yang ada di demo tetapi mengikuti Backend yang saya Deploy di Github Pages 
+Dan karena Backendnya gak saya deploy di railway jadi ENVnya tidak seperti yang ada di demo tetapi mengikuti Backend yang saya Deploy di Github Pages.
 
 ## Access disini
 Link Frontend Vercel    : [Frontend-Vecel-byEL](https://pamulang-university-short-course-da.vercel.app/)

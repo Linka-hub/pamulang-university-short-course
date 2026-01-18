@@ -3,10 +3,13 @@ NAma saya Eldrick Arsy Listyanika
 menyelesaikan Short Course Full Stack dApps Bersama Avalanche Indonesia selama 5 hari / 1 minggu
 
 ## Backend Deployment Status
+Backend API tidak dideploy menggunakan platform seperti Railway karena keterbatasan akses pada layanan berbayar. Sebagai alternatif, backend dijalankan dan diuji secara lokal, kemudian dokumentasi API dihasilkan menggunakan Swagger dan dipublikasikan melalui GitHub Pages agar tetap dapat diakses secara publik.
+
 Karena railway harus menggunakan kartu/berbayar saya mencoba menggunakan Github Pages jadi belom bisa menjalankan backend Nestjs secara server/menggunakan hosting railway karena GitHub Pages hanya static hosting.
 
 Sudah bisa di akses secara online tetapi,
 karna menggunakan Github Pages jadi saat menjalankan webnya dan kita meng-input pasti akan muncul error.
+
 
 ## Access disini
     
@@ -36,12 +39,6 @@ Berikut adalah status implementasi Full Stack dApp pada tahap Day 5:
 | 5  | Read & write blockchain sukses | ✅ Sudah     | User dapat melakukan write ke smart contract melalui wallet dan membaca data blockchain dengan benar.                                                                                                |
 | 6  | Full flow berjalan end-to-end  | ⚠️ Sebagian | Alur frontend → wallet → blockchain berjalan dengan baik. Alur frontend → backend (server production) belum sepenuhnya berjalan karena backend tidak dideploy sebagai server aktif.                  |
 
-### Catatan Deployment Backend
-
-Backend API tidak dideploy menggunakan platform seperti Railway karena keterbatasan akses pada layanan berbayar. Sebagai alternatif, backend dijalankan dan diuji secara lokal, kemudian dokumentasi API dihasilkan menggunakan Swagger dan dipublikasikan melalui GitHub Pages agar tetap dapat diakses secara publik.
-
-Pendekatan ini tetap memenuhi tujuan pembelajaran Day 5, khususnya dalam memahami arsitektur Full Stack dApp, integrasi antar layer, serta konsep deployment dan environment configuration.
-
 ### Arsitektur Akhir
 
 ```
@@ -54,11 +51,5 @@ Backend API (NestJS – Local / Swagger Documentation)
 Blockchain (Avalanche Testnet)
 ```
 
-**Status Akhir:**
-✔ Frontend live
-✔ Smart contract terdeploy
-✔ Wallet integration berhasil
-✔ Read & write blockchain berjalan
-✔ Dokumentasi backend publik
-✔ Implementasi Full Stack dApp tercapai sesuai tujuan pembelajaran Day 5
+
 

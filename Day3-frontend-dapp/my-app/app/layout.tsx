@@ -3,8 +3,8 @@ import { Providers } from './provider';
 import { Toaster } from 'sonner';
 
 export const metadata = {
-  title: 'Day 3 – Avalanche dApp',
-  description: 'Frontend Web3 using wagmi',
+  title: 'Day 3 Avalanche dApp',
+  description: 'Frontend Web3 development with Avalanche',
 };
 
 export default function RootLayout({

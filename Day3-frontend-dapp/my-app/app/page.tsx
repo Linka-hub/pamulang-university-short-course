@@ -19,11 +19,11 @@ import {
   getBlockchainEvents,
 } from "../src/contracts/services/blockchain.services";
 
-// ==============================
-//  CONFIG
-// =============================;
 
-const CONTRACT_ADDRESS = "0xd77A8283e01864b57Cda7E19ad6bc4c658858425";
+//  CONFIG
+
+
+const CONTRACT_ADDRESS = "0xFdfEf3f3291648fc3D89Cf3f1556AA1e537f103e";
 
 const SIMPLE_STORAGE_ABI = [
   {
@@ -57,9 +57,9 @@ const SIMPLE_STORAGE_ABI = [
 ];
 
 export default function Page() {
-  // ==============================
+  
   //  HELPER
-  // ==============================
+ 
   const config = useConfig();
   const isTxReverted = (error: unknown) => {
     if (error instanceof BaseError) {
@@ -68,16 +68,16 @@ export default function Page() {
     return false;
   };
 
-  // ==============================
+  
   //  WALLET
-  // ==============================
+  
   const { address, isConnected, chainId } = useAccount();
   const { connect, isPending: isConnecting } = useConnect();
   const { disconnect } = useDisconnect();
 
-  // ==============================
+  
   //  NETWORK CHECK
-  // ==============================
+ 
   const TARGET_CHAIN_ID = 43113; // Avalanche Fuji
   const isWrongNetwork = isConnected && chainId !== TARGET_CHAIN_ID;
   const getNetworkName = (chainId?: number) => {
@@ -95,17 +95,17 @@ export default function Page() {
     }
   };
 
-  // ==============================
+  
   //  STATE
-  // ==============================
+  
   const [inputValue, setInputValue] = useState("");
   const [inputMessage, setInputMessage] = useState("");
   const [pendingType, setPendingType] = useState<"value" | "message" | null>(
     null
   );
-  // ==============================
+  
   // BACKEND READ STATE
-  // ==============================
+  
   type BlockchainEvent = {
     blockNumber: string;
     value: string;
@@ -162,9 +162,9 @@ export default function Page() {
     return () => clearInterval(interval);
   }, []);
 
-  // ==============================
+ 
   //  READ
-  // ==============================
+  
   const {
     // data: value,
     refetch: refetchValue,
@@ -185,9 +185,9 @@ export default function Page() {
     functionName: "message",
   });
 
-  // ==============================
+ 
   //  WRITE
-  // ==============================
+  
   const { writeContract, isPending: isWriting } = useWriteContract();
 
   const handleSetValue = () => {
@@ -332,9 +332,9 @@ export default function Page() {
     );
   };
 
-  // ==============================
+  
   //  UI
-  // ==============================
+ 
   const shortenAddress = (addr?: string) => {
     if (!addr) return "";
     return `${addr.slice(0, 6)}...${addr.slice(-4)}`;
@@ -549,7 +549,7 @@ export default function Page() {
 
           <div className="col-span-2 pt-6 border-t border-white/10 text-center">
             <p className="text-[11px] text-white/40">
-              -------------
+              Developed by Eldrick Listyannika for Avalanche Short Course 2026
             </p>
           </div>
         </div>

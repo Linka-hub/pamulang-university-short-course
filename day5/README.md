@@ -18,6 +18,7 @@ ini Link Backend Github Pages    : [Linka-Hub.github.io-myswagger](https://linka
 Backend API (Local) :  [http://localhost:3000/myswagger](http://localhost:3000/myswagger)
 
 ## Frontend Deployment
+
 Frontend dApp dideploy menggunakan Vercel dengan framework Next.js.
 Dan karena Backendnya gak saya deploy di railway jadi ENVnya tidak seperti yang ada di demo tetapi mengikuti Backend yang saya Deploy di Github Pages.
 

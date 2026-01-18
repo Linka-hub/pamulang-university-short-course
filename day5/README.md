@@ -41,7 +41,6 @@ Berikut adalah status implementasi Full Stack dApp pada tahap Day 5:
 
 ### Arsitektur Akhir
 
-```
 User
  ↓
 Frontend (Vercel)

@@ -15,7 +15,7 @@ async function bootstrap() {
 
   const document = SwaggerModule.createDocument(app, config);
 
-  // 🔥 PENTING: generate swagger.json
+  // generate swagger.json
   writeFileSync('./swagger.json', JSON.stringify(document, null, 2));
 
   SwaggerModule.setup('myswagger', app, document);
